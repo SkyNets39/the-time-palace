@@ -7,7 +7,7 @@ import Navbar from "../_components/layout/NavBar";
 import Footer from "../_components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: { template: "%s | Chronox", default: "Welcome to Chronox" },
+  title: { template: "%s | Time Palace", default: "Welcome to Time Palace" },
   description: "Second hand luxury watches marketplace origin from Indonesia ",
 };
 

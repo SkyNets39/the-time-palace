@@ -1,4 +1,3 @@
-// app/_components/dashboard/AdminLoginForm.tsx
 "use client";
 import {
   Box,
@@ -27,16 +26,16 @@ export default function AdminLoginForm() {
       component="form"
       onSubmit={onSubmit}
       sx={{
-        maxWidth: 400,
+        maxWidth: 320,
         mx: "auto",
-        mt: 8,
-        p: 3,
+        mt: 5,
+        p: 2,
         border: "1px solid",
         borderColor: "divider",
         borderRadius: 2,
       }}
     >
-      <Typography variant="h5" sx={{ mb: 3, textAlign: "center" }}>
+      <Typography variant="h5" sx={{ mb: 2, textAlign: "center" }}>
         Admin Login
       </Typography>
 
@@ -46,7 +45,7 @@ export default function AdminLoginForm() {
         type="email"
         fullWidth
         required
-        sx={{ mb: 2 }}
+        sx={{ mb: 1.2 }}
       />
 
       <TextField
@@ -55,11 +54,11 @@ export default function AdminLoginForm() {
         type="password"
         fullWidth
         required
-        sx={{ mb: 3 }}
+        sx={{ mb: 1.5 }}
       />
 
       <Button type="submit" variant="contained" fullWidth disabled={isPending}>
-        {isPending ? <CircularProgress size={24} /> : "Login"}
+        {isPending ? <CircularProgress size={20} /> : "Login"}
       </Button>
     </Box>
   );

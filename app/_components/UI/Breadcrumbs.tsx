@@ -37,12 +37,12 @@ export default function Breadcrumbs() {
   const breadcrumbs = generateBreadcrumbs();
 
   return (
-    <Box sx={{ py: 1.5 }}>
+    <Box sx={{ py: 1 }}>
       <MUIBreadcrumbs
         separator={
           <NavigateNextIcon
             sx={{
-              fontSize: { xs: "1rem", md: "1.25rem" },
+              fontSize: { xs: "0.85rem", md: "1rem" },
             }}
           />
         }
@@ -51,7 +51,7 @@ export default function Breadcrumbs() {
         {breadcrumbs.map((crumb, index) => {
           const isLast = index === breadcrumbs.length - 1;
           const commonStyle = {
-            fontSize: { xs: "1rem", md: "1.25rem" },
+            fontSize: { xs: "0.85rem", md: "1rem" },
             fontWeight: 600,
             lineHeight: 1.5, // ✅ samain biar tinggi sejajar
             display: "flex",

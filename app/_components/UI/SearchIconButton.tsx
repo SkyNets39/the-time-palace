@@ -9,8 +9,8 @@ type Props = {
 
 export default function SearchIconButton({ onClick }: Props) {
   return (
-    <IconButton onClick={onClick} sx={{ color: "primary.main", p: 2 }}>
-      <SearchIcon />
+    <IconButton onClick={onClick} sx={{ color: "primary.main", p: 1 }}>
+      <SearchIcon sx={{ fontSize: "1.1rem" }} />
     </IconButton>
   );
 }

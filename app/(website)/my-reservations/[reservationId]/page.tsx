@@ -30,6 +30,7 @@ export default async function ReservationDetailPage({ params }: Props) {
         justifyContent: "center",
         backgroundColor: "background.default",
         px: 2,
+        mb: 3,
       }}
     >
       {/* 🔹 Breadcrumbs wrapper */}

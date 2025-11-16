@@ -78,7 +78,7 @@ export default function Pagination({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        my: 5,
+        mb: 3,
         gap: 1,
         opacity: isPending ? 0.6 : 1,
         transition: "opacity 0.2s",

@@ -31,8 +31,8 @@ export default async function CatalogHeader({
         outline: "1px solid",
         outlineColor: "divider",
         gap: 3,
-        px: { xs: 2, sm: 4, md: 5 },
-        py: { xs: 2, sm: 3 },
+        px: { xs: 1.5, sm: 2.5, md: 4 },
+        py: { xs: 1.2, sm: 2 },
       }}
     >
       {/* Title */}
@@ -40,7 +40,7 @@ export default async function CatalogHeader({
         <Typography
           variant="h2"
           fontWeight={600}
-          sx={{ fontSize: { xs: "1.8rem", sm: "2rem", md: "2.4rem" } }}
+          sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem", md: "1.7rem" } }}
         >
           {headerText}
         </Typography>

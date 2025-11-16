@@ -81,7 +81,7 @@ export default function Filter({
     <Box
       sx={{
         bgcolor: "background.paper",
-        p: 3,
+        p: 2,
         display: "flex",
         flexDirection: "column",
         gap: 2,
@@ -95,7 +95,7 @@ export default function Filter({
         }}
       >
         <Box sx={{ display: { xs: "none", md: "inherit" } }}>
-          <Typography variant="h3" fontWeight={700} mb={1}>
+          <Typography variant="h3" fontWeight={700} mb={0.5}>
             Filter
           </Typography>
           <FilterAltIcon />

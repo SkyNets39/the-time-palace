@@ -59,13 +59,13 @@ export default function AdminSort({
         color="primary"
         onClick={(e) => setAnchorEl(e.currentTarget)}
         sx={{
-          px: 4,
-          py: 1.3,
+          px: 2.2,
+          py: 0.8,
+          fontSize: "0.75rem",
           textTransform: "none",
           fontWeight: 500,
-          borderRadius: 6,
+          borderRadius: 5,
           color: isActive ? "white" : "inherit",
-          "&:hover": { color: "white", backgroundColor: "primary.dark" },
         }}
       >
         {activeLabel}
@@ -80,14 +80,15 @@ export default function AdminSort({
         }}
       >
         {options.map((opt) => (
-          <MenuItem
-            key={opt.value}
-            onClick={() => handleSelect(opt.value)}
-            dense
-            divider
-          >
-            <Radio checked={currentSort === opt.value} />
-            <ListItemText primary={opt.label} />
+          <MenuItem key={opt.value} onClick={() => handleSelect(opt.value)}>
+            <Radio
+              checked={currentSort === opt.value}
+              sx={{ p: 0.3, transform: "scale(0.8)" }}
+            />
+            <ListItemText
+              primary={opt.label}
+              primaryTypographyProps={{ fontSize: "0.8rem" }}
+            />
           </MenuItem>
         ))}
       </Menu>

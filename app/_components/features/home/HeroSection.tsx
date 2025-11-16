@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 export default function HeroSection() {
   return (
-    <Box sx={{ maxWidth: "100%", height: 600, mx: 8 }}>
+    <Box sx={{ maxWidth: "100%", height: 500, mx: 8 }}>
       <Swiper
         modules={[Pagination, Autoplay]}
         style={{ height: "100%" }}

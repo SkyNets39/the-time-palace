@@ -26,15 +26,15 @@ export default async function BrandLayout({
   return (
     <Box
       sx={{
-        mx: { xs: 2, sm: 4, md: 8 }, // responsive margin
+        mx: { xs: 1.5, sm: 2.5, md: 5 }, // responsive margin
         display: "flex",
         flexDirection: "column",
-        gap: 2,
+        gap: 1.5,
       }}
     >
       <Breadcrumbs />
 
-      <Box sx={{ display: "flex", gap: 8 }}>
+      <Box sx={{ display: "flex", gap: 4 }}>
         {/* 🔹 Sidebar Filter (Desktop Only) */}
         <Box
           sx={{

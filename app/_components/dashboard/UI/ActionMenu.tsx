@@ -31,7 +31,7 @@ export default function ActionMenu({ actions, size = "small" }: Props) {
   return (
     <>
       <IconButton size={size} onClick={(e) => setAnchorEl(e.currentTarget)}>
-        <MoreVertIcon />
+        <MoreVertIcon sx={{ fontSize: "1.1rem" }} />
       </IconButton>
       <Menu
         anchorEl={anchorEl}
@@ -51,7 +51,7 @@ export default function ActionMenu({ actions, size = "small" }: Props) {
                 href={a.href}
                 onClick={() => setAnchorEl(null)}
                 sx={{
-                  fontSize: "1rem",
+                  fontSize: "0.85rem",
                   color:
                     a.color === "error"
                       ? "error.main"
@@ -61,12 +61,12 @@ export default function ActionMenu({ actions, size = "small" }: Props) {
                 }}
               >
                 {a.icon && (
-                  <ListItemIcon sx={{ minWidth: 36 }}>{a.icon}</ListItemIcon>
+                  <ListItemIcon sx={{ minWidth: 26 }}>{a.icon}</ListItemIcon>
                 )}
                 <ListItemText
                   slotProps={{
                     primary: {
-                      sx: { fontSize: "1rem" },
+                      sx: { fontSize: "0.85rem" },
                     },
                   }}
                 >
@@ -100,7 +100,7 @@ export default function ActionMenu({ actions, size = "small" }: Props) {
               <ListItemText
                 slotProps={{
                   primary: {
-                    sx: { fontSize: "1rem" },
+                    sx: { fontSize: "0.8rem" },
                   },
                 }}
               >

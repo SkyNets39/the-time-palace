@@ -25,7 +25,7 @@ export default function OrderDetailPage() {
   const updateMut = useUpdateOrderStatus();
   const [refundOpen, setRefundOpen] = useState(false);
 
-  // ✅ Calculate subtotal, warranty, and total
+  //  Calculate subtotal, warranty, and total
   const { subtotal, warranty, total } = useMemo(() => {
     if (!order?.items?.length) return { subtotal: 0, warranty: 0, total: 0 };
 
@@ -188,7 +188,7 @@ export default function OrderDetailPage() {
         <Button
           variant="outlined"
           onClick={() => router.back()}
-          sx={{ px: 4, py: 1.5, borderRadius: 8 }}
+          sx={{ px: 3, py: 1, borderRadius: 8, fontSize: "0.8rem" }}
         >
           Back
         </Button>
@@ -197,7 +197,7 @@ export default function OrderDetailPage() {
           color="error"
           onClick={() => setRefundOpen(true)}
           disabled={order.status === "refunded"}
-          sx={{ px: 4, py: 1.5, borderRadius: 8 }}
+          sx={{ px: 3, py: 1, borderRadius: 8, fontSize: "0.8rem" }}
         >
           Refund
         </Button>
@@ -220,7 +220,7 @@ export default function OrderDetailPage() {
   );
 }
 
-/* ✅ Subcomponent for clean info lines */
+/* Subcomponent for clean info lines */
 function CustomerInfoLine({
   field,
   value,

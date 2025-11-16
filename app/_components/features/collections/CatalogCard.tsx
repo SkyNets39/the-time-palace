@@ -28,7 +28,7 @@ export default function CatalogCard({ data }: { data: WatchListing }) {
       <Box
         sx={{
           position: "relative",
-          height: { xs: 200, sm: 240, md: 280 }, // ✅ Responsive image height
+          height: { xs: 160, sm: 200, md: 240 }, // ✅ Responsive image height
           bgcolor: image ? "transparent" : "grey.300",
           display: "flex",
           alignItems: "center",
@@ -57,16 +57,14 @@ export default function CatalogCard({ data }: { data: WatchListing }) {
       <CardContent
         sx={{
           flexGrow: 1,
-          px: { xs: 2, md: 3 }, // ✅ Kurangi horizontal padding di mobile
-          py: { xs: 1.5, md: 2 }, // ✅ Adjust vertical padding
+          px: { xs: 1.5, md: 2.5 },
+          py: { xs: 1, md: 1.5 },
           display: "flex",
           flexDirection: "column",
           gap: { xs: 0.5, md: 1 }, // ✅ Kurangi gap di mobile
 
           // ✅ CRITICAL: Override MUI default padding
-          "&:last-child": {
-            pb: { xs: 1.5, md: 2 }, // Override default last-child padding
-          },
+          "&:last-child": { pb: { xs: 1, md: 1.5 } },
         }}
       >
         {/* Brand */}
@@ -74,7 +72,7 @@ export default function CatalogCard({ data }: { data: WatchListing }) {
           subtitle
           href={`/collections/brand/${slugify(brand)}`}
           sx={{
-            fontSize: { xs: "0.75rem", md: "1.1rem" }, // ✅ Slightly bigger
+            fontSize: { xs: "0.6rem", md: "0.8rem" }, // ✅ Slightly bigger
             lineHeight: { xs: 1.3, md: 1.5 }, // ✅ Tighter line height
           }}
         >
@@ -86,7 +84,7 @@ export default function CatalogCard({ data }: { data: WatchListing }) {
           title
           href={`/collections/${id}`}
           sx={{
-            fontSize: { xs: "0.95rem", md: "1.6rem" }, // ✅ Slightly bigger
+            fontSize: { xs: "0.85rem", md: "1.3rem" }, // ✅ Slightly bigger
             lineHeight: { xs: 1.3, md: 1.4 }, // ✅ Tighter line height
             mb: { xs: 0.5, md: 0 }, // ✅ Small margin bottom di mobile
           }}
@@ -106,9 +104,9 @@ export default function CatalogCard({ data }: { data: WatchListing }) {
           <Typography
             variant="body1"
             color="primary.main"
-            fontWeight={500}
+            fontWeight={600}
             sx={{
-              fontSize: { xs: "1.1rem", md: "1.2rem" }, // ✅ Adjust size
+              fontSize: { xs: "0.95rem", md: "1.05rem" }, // ✅ Adjust size
               lineHeight: 1.2,
             }}
           >
@@ -126,8 +124,8 @@ export default function CatalogCard({ data }: { data: WatchListing }) {
               letterSpacing: "0.1rem",
               textTransform: "capitalize",
               alignSelf: "flex-start",
-              px: { xs: 1, md: 2 },
-              height: { xs: 20, md: 24 }, // ✅ Compact height di mobile
+              height: { xs: 18, md: 22 },
+              px: { xs: 0.8, md: 1.5 },
             }}
             label={status}
           />

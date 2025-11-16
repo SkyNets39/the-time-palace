@@ -8,14 +8,7 @@ import AdminSearchBar from "@/app/_components/dashboard/UI/AdminSearchBar";
 
 export default function OrdersTableOperation() {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
-    >
+    <>
       {/* LEFT SIDE — Filters and Sort */}
       <AdminTableOperations>
         {/* ✅ Filter by Status */}
@@ -38,10 +31,10 @@ export default function OrdersTableOperation() {
             { value: "amount-asc", label: "Amount (Low to High)" },
           ]}
         />
+        <Box sx={{ marginLeft: "auto" }}>
+          <AdminSearchBar placeholder="Search customer name..." />
+        </Box>
       </AdminTableOperations>
-
-      {/* RIGHT SIDE — Search Bar */}
-      <AdminSearchBar placeholder="Search customer name..." />
-    </Box>
+    </>
   );
 }

@@ -26,9 +26,6 @@ export default function AssetCard({
         boxShadow: "none",
         transition: "transform 0.3s ease",
         m: 0, // ⬅️ pastikan tidak ada margin antar kartu
-        "&:hover": {
-          transform: { md: "scale(1.02)" },
-        },
       }}
     >
       <Box
@@ -49,10 +46,10 @@ export default function AssetCard({
           image={image}
           alt={alt}
           sx={{
-            width: "80%",
-            height: { xs: 100, sm: 140, md: height },
+            width: "70%",
+            height: { xs: 70, sm: 100, md: height },
             objectFit: "contain",
-            p: { xs: 2, sm: 4, md: 6 },
+            p: { xs: 1.2, sm: 2.5, md: 4 },
           }}
         />
       </Box>

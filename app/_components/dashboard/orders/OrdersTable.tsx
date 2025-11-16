@@ -87,13 +87,13 @@ export default function OrdersTable() {
           <Chip
             label={row.status}
             sx={{
-              width: 110,
-              py: 0.5,
-              fontWeight: 600,
+              px: 1,
               textTransform: "capitalize",
-              border: "1px solid",
+              fontSize: "0.5rem",
+              fontWeight: 600,
               bgcolor: bg,
-              color: color,
+              color,
+              border: "1px solid",
             }}
           />
         );

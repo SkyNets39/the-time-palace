@@ -95,6 +95,7 @@ export default function ListingsTable() {
             sx={{
               px: 1,
               textTransform: "capitalize",
+              fontSize: "0.5rem",
               fontWeight: 600,
               bgcolor: bg,
               color,
@@ -136,7 +137,12 @@ export default function ListingsTable() {
         <Button
           variant="contained"
           onClick={() => setCreateOpen(true)}
-          sx={{ px: 4, py: 2, borderRadius: 10 }}
+          sx={{
+            px: 2.2,
+            py: 1.2,
+            borderRadius: 5,
+            fontSize: "0.8rem",
+          }}
         >
           + Create New Listing
         </Button>

@@ -15,9 +15,9 @@ export default function IconTextCard({ icon, header, body }: Props) {
         display: "flex",
         flex: 1,
         alignItems: "flex-start", // aligns icon to the top of text
-        gap: 2,
+        gap: 1.2,
         bgcolor: "background.default",
-        p: 5,
+        p: 3,
       }}
     >
       {/* Left: Icon */}
@@ -28,7 +28,7 @@ export default function IconTextCard({ icon, header, body }: Props) {
         <Typography
           variant="body1"
           gutterBottom
-          sx={{ fontSize: "1.5rem", fontWeight: "600" }}
+          sx={{ fontSize: "1rem", fontWeight: "600", mt: 0.5 }}
         >
           {header}
         </Typography>

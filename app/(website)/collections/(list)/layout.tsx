@@ -22,7 +22,7 @@ export default async function CollectionsLayout({
   return (
     <Box
       sx={{
-        mx: { xs: 2, sm: 3, md: 8 },
+        mx: { xs: 1.5, sm: 2, md: 8 },
         display: "flex",
         flexDirection: "column",
         gap: 2,
@@ -32,13 +32,13 @@ export default async function CollectionsLayout({
       <Box
         sx={{
           display: "flex",
-          gap: { xs: 0, md: 4 },
+          gap: { xs: 0, md: 3 },
         }}
       >
         {/* ⛔ Filter hanya muncul di laptop */}
         <Box
           sx={{
-            flex: "0 0 400px",
+            flex: "0 0 20%",
             display: { xs: "none", md: "block" },
           }}
         >

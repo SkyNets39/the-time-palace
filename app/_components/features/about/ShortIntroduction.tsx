@@ -10,15 +10,15 @@ export default function IconTextCardsWithHeader() {
         gap: 7,
         bgcolor: "white",
         textAlign: "center",
-        px: { xs: 3, sm: 8, md: 20, lg: 50 }, // 🔹 responsif padding horizontal
-        py: { xs: 6, sm: 10, md: 13 }, // 🔹 responsif padding vertical
+        px: { xs: 2, sm: 5, md: 10, lg: 20 },
+        py: { xs: 4, sm: 6, md: 8 },
       }}
     >
       {/* Header */}
       <Typography
         variant="h2"
         sx={{
-          fontSize: { xs: "1.8rem", sm: "2.2rem", md: "2.4rem" },
+          fontSize: { xs: "1.3rem", sm: "1.5rem", md: "1.7rem" },
           lineHeight: 1.3,
         }}
       >
@@ -28,7 +28,7 @@ export default function IconTextCardsWithHeader() {
       {/* Body Text */}
       <Typography
         sx={{
-          fontSize: { xs: "0.95rem", sm: "1rem", md: "1.05rem" },
+          fontSize: { xs: "0.8rem", sm: "0.9rem", md: "1rem" },
           lineHeight: 1.8,
           maxWidth: { xs: "100%", sm: "85%", md: "100%" },
           mx: "auto",
@@ -48,8 +48,8 @@ export default function IconTextCardsWithHeader() {
         size="large"
         sx={{
           alignSelf: "center",
-          p: { xs: 2, sm: 2.5, md: 3 },
-          fontSize: { xs: "1rem", sm: "1.1rem", md: "1.2rem" },
+          p: { xs: 1.2, sm: 1.5, md: 2 },
+          fontSize: { xs: "0.85rem", sm: "0.9rem", md: "1rem" },
         }}
         href="/collections"
       >

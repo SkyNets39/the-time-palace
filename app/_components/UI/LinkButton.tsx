@@ -17,13 +17,13 @@ export default function LinkButton({ href, children }: Props) {
       sx={{
         color: "text.primary",
         background: "transparent",
-        fontSize: "1.2rem",
+        fontSize: "0.9rem",
         textTransform: "none",
         fontWeight: 500,
-        px: 1,
+        px: 0.6,
         position: "relative",
         "&:hover": {
-          background: "transparent", // no bg hover
+          background: "transparent",
         },
         "&::after": {
           content: '""',
@@ -31,7 +31,7 @@ export default function LinkButton({ href, children }: Props) {
           left: 0,
           bottom: 0,
           width: "0%",
-          height: "2px",
+          height: "1.5px",
           bgcolor: "primary.main",
           transition: "width 0.3s ease-in-out",
         },

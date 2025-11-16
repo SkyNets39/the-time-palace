@@ -65,7 +65,7 @@ export default function ReservationDetailPage() {
           label={status.toUpperCase()}
           sx={{
             px: 2,
-            py: 0.5,
+            fontSize: "0.6rem",
             fontWeight: 700,
             bgcolor: bg,
             color: color,
@@ -180,7 +180,7 @@ export default function ReservationDetailPage() {
             variant="contained"
             color="error"
             onClick={() => setCancelOpen(true)}
-            sx={{ borderRadius: 5, px: 3 }}
+            sx={{ px: 3, py: 1, borderRadius: 8, fontSize: "0.8rem" }}
           >
             Cancel
           </Button>
@@ -192,7 +192,7 @@ export default function ReservationDetailPage() {
             variant="contained"
             color="success"
             onClick={() => setConfirmOpen(true)}
-            sx={{ borderRadius: 5, px: 3 }}
+            sx={{ px: 3, py: 1, borderRadius: 8, fontSize: "0.8rem" }}
           >
             Confirm
           </Button>

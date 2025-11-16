@@ -1,11 +1,11 @@
 "use client";
-import MostTrendingWatches from "@/app/_components/dashboard/stats/MostTrendingWatches";
-import NeedActionsTable from "@/app/_components/dashboard/stats/NeedActionsTable";
-import RevenuePerBrandChart from "@/app/_components/dashboard/stats/RevenuePerBrandChart";
 import SalesCard from "@/app/_components/dashboard/stats/SalesCards";
 import TopBrandSalesCard from "@/app/_components/dashboard/stats/TopBrandSalesCard";
-import HeaderText from "@/app/_components/dashboard/UI/HeaderText";
+import NeedActionsTable from "@/app/_components/dashboard/stats/NeedActionsTable";
+import MostTrendingWatches from "@/app/_components/dashboard/stats/MostTrendingWatches";
+import RevenuePerBrandChart from "@/app/_components/dashboard/stats/RevenuePerBrandChart";
 import TableFilter from "@/app/_components/dashboard/UI/TableFilter";
+import HeaderText from "@/app/_components/dashboard/UI/HeaderText";
 import { Box, Grid, Skeleton, Stack } from "@mui/material";
 import { Suspense } from "react";
 

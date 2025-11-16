@@ -7,22 +7,22 @@ import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 
 const cardItems = [
   {
-    icon: <PeopleAltIcon color="secondary" sx={{ fontSize: 90 }} />,
+    icon: <PeopleAltIcon color="secondary" sx={{ fontSize: 45 }} />,
     header: "CONSIGNMENT",
     body: "We manage the sale of your watch through our platform, handling all the details for you.",
   },
   {
-    icon: <CurrencyExchangeIcon color="secondary" sx={{ fontSize: 90 }} />,
+    icon: <CurrencyExchangeIcon color="secondary" sx={{ fontSize: 45 }} />,
     header: "DIRECT SELLING",
     body: "Sell your watch directly to us, and receive immediate payment based on an agreed price.",
   },
   {
-    icon: <Inventory2Icon color="secondary" sx={{ fontSize: 90 }} />,
+    icon: <Inventory2Icon color="secondary" sx={{ fontSize: 45 }} />,
     header: "TRADE-IN",
     body: "Exchange your old watch for credit towards a new one, making upgrading easy.",
   },
   {
-    icon: <ShoppingCartCheckoutIcon color="secondary" sx={{ fontSize: 90 }} />,
+    icon: <ShoppingCartCheckoutIcon color="secondary" sx={{ fontSize: 45 }} />,
     header: "PRE-ORDER",
     body: "Request specific models not currently in stock, and we’ll work to find and secure them for you.",
   },
@@ -36,8 +36,8 @@ export default function ServicesBanner() {
         flexDirection: "column",
         bgcolor: "white",
         textAlign: "center",
-        px: { xs: 2, sm: 4, md: 8 },
-        py: { xs: 6, sm: 8, md: 13 },
+        px: { xs: 1.5, sm: 3, md: 5 },
+        py: { xs: 4, sm: 5, md: 8 },
         gap: 4,
       }}
     >
@@ -46,14 +46,14 @@ export default function ServicesBanner() {
         <Typography
           variant="h2"
           sx={{
-            fontSize: { xs: "1.8rem", sm: "2.2rem", md: "2.4rem" },
+            fontSize: { xs: "1.4rem", sm: "1.6rem", md: "1.8rem" },
           }}
         >
           What Services We Offer
         </Typography>
         <Typography
           sx={{
-            fontSize: { xs: "0.9rem", sm: "1rem" },
+            fontSize: { xs: "0.8rem", sm: "0.9rem" },
             maxWidth: 700,
             mx: "auto",
           }}

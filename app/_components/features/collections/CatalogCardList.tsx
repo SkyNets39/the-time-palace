@@ -13,7 +13,7 @@ export default function CardCatalogList({ data }: Props) {
       {data.map((item) => (
         <Grid
           key={item.id}
-          size={{ xs: 6, sm: 6, md: 4, lg: 4 }} // 📱 Tablet & HP = 2 kolom, 💻 = 3 kolom
+          size={{ xs: 6, sm: 6, md: 4 }}
           display="flex"
           justifyContent="center"
         >

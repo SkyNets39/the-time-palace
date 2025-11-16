@@ -375,6 +375,7 @@ export default function CreateNewOrderPage() {
             type="submit"
             variant="contained"
             color="primary"
+            sx={{ borderRadius: 5, px: 4, py: 1 }}
             disabled={createOrderMut.isPending || isSubmitting}
           >
             {createOrderMut.isPending || isSubmitting

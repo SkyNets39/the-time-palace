@@ -89,7 +89,7 @@ export default function SearchBar() {
           alignItems: "center",
           border: "1px solid",
           borderColor: "divider",
-          borderRadius: 2,
+          borderRadius: 0.8,
           overflow: "hidden",
           bgcolor: "background.paper",
         }}
@@ -105,7 +105,11 @@ export default function SearchBar() {
           onKeyDown={handleKeyDown}
           sx={{
             "& fieldset": { border: "none" },
-            px: 1,
+            px: 0.4,
+            "& input": {
+              fontSize: "0.85rem",
+              py: 0.35,
+            },
           }}
         />
         <SearchIconButton onClick={handleSearch} />
@@ -125,21 +129,22 @@ export default function SearchBar() {
             borderRadius: 1,
             mt: 0.5,
             zIndex: 20,
-            maxHeight: 260,
+            maxHeight: 200,
             overflowY: "auto",
           }}
         >
           {suggestions.map((item) => (
             <ListItemButton
               key={item.id}
-              onClick={() => handleSuggestionClick(item.id)} // ✅ updated
+              onClick={() => handleSuggestionClick(item.id)}
+              sx={{ py: 0.5, px: 1 }}
             >
               <ListItemText
                 primary={formatDisplayName(item.name)}
                 slotProps={{
                   primary: {
                     sx: {
-                      fontSize: "1rem",
+                      fontSize: "0.85rem",
                     },
                   },
                 }}

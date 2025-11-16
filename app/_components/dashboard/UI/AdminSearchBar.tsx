@@ -41,22 +41,23 @@ export default function AdminSearchBar({
         alignItems: "center",
         border: "1px solid",
         borderColor: "black",
-        bgcolor: "background.default",
+        bgcolor: "background.paper",
         borderRadius: 5,
-        px: 1.5,
-        height: 40, // ✅ sama tinggi seperti button di TableFilter
-        width: "250px",
+        px: 1,
+        height: 34,
+        width: "220px",
       }}
     >
-      <SearchIcon sx={{ fontSize: 20, color: "text.secondary", mr: 1 }} />
+      <SearchIcon sx={{ fontSize: 20, color: "text.secondary", mr: 0.5 }} />
       <InputBase
         placeholder={placeholder}
         value={value}
         onChange={(e) => setValue(e.target.value)}
         sx={{
           flex: 1,
-          fontSize: 14,
+          fontSize: "0.75rem",
           color: "text.primary",
+          py: 0.2,
         }}
         inputProps={{ "aria-label": "search" }}
       />
@@ -66,8 +67,8 @@ export default function AdminSearchBar({
           size="small"
           sx={{
             color: "text.secondary",
-            p: 0.3,
-            "&:hover": { bgcolor: "action.hover" },
+            p: 0.2,
+            fontSize: "0.75rem",
           }}
         >
           ✕

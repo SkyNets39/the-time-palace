@@ -35,12 +35,12 @@ export default function TableFilter({
     <Box
       sx={{
         display: "flex",
-        gap: 1,
+        gap: 0.35,
         border: "1px solid",
         borderColor: "divider",
         bgcolor: "background.paper",
-        borderRadius: 5,
-        p: 0.5,
+        borderRadius: 3,
+        p: 0.3,
       }}
     >
       {options.map((option) => {
@@ -52,10 +52,12 @@ export default function TableFilter({
             variant={isActive ? "contained" : "text"}
             color={isActive ? "primary" : "inherit"}
             sx={{
-              px: 3,
+              px: 1.3,
+              fontSize: "0.7rem",
               fontWeight: 500,
               textTransform: "none",
-              borderRadius: 4,
+              borderRadius: 2.5,
+              minHeight: 32,
               color: isActive ? "white" : "text.primary",
               "&:hover": {
                 bgcolor: isActive ? "primary.dark" : "action.hover",

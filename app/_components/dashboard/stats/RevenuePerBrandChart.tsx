@@ -55,7 +55,7 @@ export default function RevenuePerBrandChart() {
         borderRadius: 2,
         border: "1px solid",
         borderColor: "divider",
-        height: 380,
+        height: 330,
       }}
     >
       <Typography variant="h6" fontWeight={600} mb={1}>
@@ -65,17 +65,20 @@ export default function RevenuePerBrandChart() {
         {periodLabel} summary — completed vs active reservations
       </Typography>
 
-      <ResponsiveContainer width="100%" height={260}>
+      <ResponsiveContainer width="100%" height={220}>
         <BarChart
           data={data || []}
           margin={{ top: 10, right: 30, left: 0, bottom: 20 }}
           barGap={8}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="brand" />
-          <YAxis tickFormatter={(val) => formatUSD(val)} />
+          <XAxis dataKey="brand" tick={{ fontSize: "0.75rem" }} />
+          <YAxis
+            tickFormatter={(val) => formatUSD(val)}
+            tick={{ fontSize: "0.75rem" }}
+          />
           <Tooltip formatter={(val) => formatUSD(val as number)} />
-          <Legend />
+          <Legend wrapperStyle={{ fontSize: "0.75rem" }} />
           <Bar
             dataKey="completedRevenue"
             name="Completed Sales"

@@ -8,8 +8,8 @@ export default async function Footer() {
     <Box
       component="footer"
       sx={{
-        py: 6,
-        px: { xs: 3, md: 8 },
+        py: 4,
+        px: { xs: 2, md: 8 },
         backgroundColor: "grey.900",
         color: "grey.100",
       }}
@@ -20,16 +20,16 @@ export default async function Footer() {
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-between",
-          rowGap: 4,
-          columnGap: 6,
+          rowGap: 2.5,
+          columnGap: 4,
         }}
       >
         {stores.map((store) => (
           <Box
             key={store.id}
             sx={{
-              flex: "1 1 250px", // responsive sizing
-              minWidth: 250,
+              flex: "1 1 200px",
+              minWidth: 200,
             }}
           >
             <Typography variant="h6" gutterBottom>
@@ -37,7 +37,7 @@ export default async function Footer() {
             </Typography>
 
             {store.address && (
-              <Typography variant="body2" sx={{ mb: 0.5 }}>
+              <Typography variant="body2" sx={{ mb: 0.3 }}>
                 {store.address}
               </Typography>
             )}
@@ -58,10 +58,10 @@ export default async function Footer() {
       {/* Divider line */}
       <Box
         sx={{
-          mt: 6,
+          mt: 4,
           borderTop: "1px solid",
           borderColor: "grey.700",
-          pt: 3,
+          pt: 2,
         }}
       >
         <Typography variant="body2" align="center">

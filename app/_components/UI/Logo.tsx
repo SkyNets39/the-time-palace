@@ -18,16 +18,16 @@ export default function Logo({ admin = false }) {
         color="primary"
         sx={{
           fontSize: admin
-            ? "1.9rem"
+            ? "1.4rem"
             : {
-                xs: "1.4rem", // 📱 mobile
-                sm: "1.8rem", // 🧾 tablet
-                md: "2.2rem", // 💻 laptop
-                lg: "2.4rem", // 🖥️ large screen
+                xs: "1.05rem",
+                sm: "1.3rem",
+                md: "1.55rem",
+                lg: "1.7rem",
               },
           fontWeight: 700,
-          letterSpacing: 0.5,
-          lineHeight: 1.2,
+          letterSpacing: 0.4,
+          lineHeight: 1.15,
           whiteSpace: "nowrap",
         }}
       >

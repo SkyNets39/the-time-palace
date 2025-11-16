@@ -94,15 +94,12 @@ export default function TableToggleFilter({
         color="primary"
         onClick={handleToggleMenu}
         sx={{
-          px: 4,
-          py: 1.3,
+          px: 2.2,
+          py: 0.8,
+          fontSize: "0.75rem",
           fontWeight: 500,
-          borderRadius: 6,
+          borderRadius: 5,
           color: isActive ? "white" : "inherit",
-          "&:hover": {
-            color: "white",
-            backgroundColor: "primary.dark",
-          },
         }}
       >
         {label}
@@ -123,17 +120,12 @@ export default function TableToggleFilter({
         }}
       >
         {options.map((option) => (
-          <MenuItem
-            key={option}
-            onClick={() => handleOptionClick(option)}
-            dense
-            divider
-          >
-            <Checkbox checked={selected.includes(option)} />
+          <MenuItem key={option} onClick={() => handleOptionClick(option)}>
+            <Checkbox checked={selected.includes(option)} sx={{ p: 0.4 }} />
             <ListItemText
               slotProps={{
                 primary: {
-                  sx: { fontSize: "1rem" },
+                  sx: { fontSize: "0.78rem" },
                 },
               }}
               primary={formatDisplayName(option)}

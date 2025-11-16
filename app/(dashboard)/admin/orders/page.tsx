@@ -23,7 +23,12 @@ export default function Page() {
           variant="contained"
           color="primary"
           onClick={() => router.push("/admin/orders/create-new-order")}
-          sx={{ px: 4, py: 2, borderRadius: 5 }}
+          sx={{
+            px: 2.2,
+            py: 1.2,
+            borderRadius: 5,
+            fontSize: "0.8rem",
+          }}
         >
           + Create New Order
         </Button>

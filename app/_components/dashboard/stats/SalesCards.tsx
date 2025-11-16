@@ -33,7 +33,7 @@ export default function SalesCard() {
       value: data ? `$${data.totalSales.toLocaleString()}` : "-",
       icon: (
         <MonetizationOnTwoToneIcon
-          sx={{ fontSize: "4rem", color: green[400] }}
+          sx={{ fontSize: "3rem", color: green[400] }}
         />
       ),
     },
@@ -41,14 +41,14 @@ export default function SalesCard() {
       label: "Total Orders",
       value: data ? data.totalOrders.toString() : "-",
       icon: (
-        <ShoppingBagTwoToneIcon sx={{ fontSize: "4rem", color: purple[400] }} />
+        <ShoppingBagTwoToneIcon sx={{ fontSize: "3rem", color: purple[400] }} />
       ),
     },
     {
       label: "New Users",
       value: data ? data.newUsers.toString() : "-",
       icon: (
-        <PersonAddTwoToneIcon sx={{ fontSize: "4rem", color: blue[400] }} />
+        <PersonAddTwoToneIcon sx={{ fontSize: "3rem", color: blue[400] }} />
       ),
     },
   ];
@@ -83,7 +83,7 @@ export default function SalesCard() {
         borderColor: "divider",
       }}
     >
-      <Typography variant="h6" fontWeight={600} mb={1}>
+      <Typography variant="h6" fontWeight={600}>
         {`${periodLabel} sales`}
       </Typography>
       <Typography variant="body2" color="text.secondary" mb={2}>
@@ -100,7 +100,7 @@ export default function SalesCard() {
               <CardContent>
                 {item.icon}
                 <Box>
-                  <Typography fontWeight={700} fontSize={"1.8rem"}>
+                  <Typography fontWeight={700} fontSize={"1.55rem"}>
                     {item.value}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">

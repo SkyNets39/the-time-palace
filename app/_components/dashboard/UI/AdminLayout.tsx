@@ -3,8 +3,8 @@
 import { Box, Button, useTheme } from "@mui/material";
 import { ReactNode, useMemo } from "react";
 import { usePathname } from "next/navigation";
-import Logo from "../../UI/Logo";
 import LogoutIcon from "@mui/icons-material/Logout";
+import Logo from "../../UI/Logo";
 import AdminNavbar from "@/app/_components/dashboard/UI/AdminNavbar";
 import AdminProfile from "./AdminProfile";
 import { useRouter } from "next/navigation";
@@ -62,14 +62,13 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          px: 6,
-          pt: 6,
+          px: 5,
+          pt: 4,
           boxSizing: "border-box",
         }}
       >
-        <Box>
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
           <Logo admin />
-          {/* Kirim currentTab agar navbar tahu route mana yang aktif */}
           <AdminNavbar currentTab={currentTab} />
         </Box>
       </Box>
@@ -84,20 +83,21 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
             justifyContent: "flex-end",
             borderBottom: `1px solid ${theme.palette.divider}`,
             display: "flex",
-            gap: 3,
+            gap: 1.8,
             alignItems: "center",
-            py: 1,
-            px: 3,
+            py: 0.6,
+            px: 2,
             boxSizing: "border-box",
           }}
         >
           <AdminProfile />
           <Button
+            size="small"
             variant="outlined"
             color="error"
             startIcon={<LogoutIcon />}
-            sx={{ px: 3 }}
             onClick={handleSignOut}
+            sx={{ px: 3 }}
           >
             Sign out
           </Button>
@@ -109,7 +109,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
           sx={{
             flex: 1,
             overflowY: "auto",
-            p: 6,
+            p: 3.5,
           }}
         >
           {children}

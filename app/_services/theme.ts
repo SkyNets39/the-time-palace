@@ -43,49 +43,49 @@ const theme = createTheme({
     h1: {
       fontFamily: "'Prata', serif",
       fontWeight: 600,
-      fontSize: "3rem",
+      fontSize: "2.25rem", // 3rem × 0.75
       letterSpacing: "-0.5px",
     },
     h2: {
       fontFamily: "'Prata', serif",
       fontWeight: 600,
-      fontSize: "2.25rem",
+      fontSize: "1.688rem", // 2.25rem × 0.75
       letterSpacing: "-0.5px",
     },
     h3: {
       fontFamily: "'Prata', serif",
       fontWeight: 600,
-      fontSize: "1.75rem",
+      fontSize: "1.313rem", // 1.75rem × 0.75
     },
     h4: {
       fontFamily: "'Prata', serif",
       fontWeight: 600,
-      fontSize: "1.5rem",
+      fontSize: "1.125rem", // 1.5rem × 0.75
     },
     h5: {
       fontFamily: "'Prata', serif",
       fontWeight: 600,
-      fontSize: "1.3rem",
+      fontSize: "0.975rem", // 1.3rem × 0.75
     },
     h6: {
       fontFamily: "'Prata', serif",
       fontWeight: 600,
-      fontSize: "1.2rem",
+      fontSize: "0.9rem", // 1.2rem × 0.75
     },
     body1: {
       fontFamily: '"Montserrat Variable", sans-serif',
-      fontSize: "1.3rem",
+      fontSize: "0.975rem", // 1.3rem × 0.75
       lineHeight: 1.6,
       color: "text.secondary",
     },
     body2: {
       fontFamily: '"Montserrat Variable", sans-serif',
-      fontSize: "1rem",
+      fontSize: "0.75rem", // 1rem × 0.75
       color: "#4F4F4F",
     },
     button: {
       fontFamily: '"Montserrat Variable", sans-serif',
-      textTransform: "none", // keep buttons looking elegant
+      textTransform: "none",
       fontWeight: 500,
       letterSpacing: "0.3px",
     },

@@ -37,8 +37,8 @@ export default async function Navbar() {
           borderBottom: "1px solid",
           borderColor: "divider",
           backgroundColor: "background.paper",
-          px: { xs: 2, md: 5 },
-          py: { xs: 1.5, md: 4 },
+          px: { xs: 1.5, md: 5 },
+          py: { xs: 1.1, md: 2.5 },
         }}
       >
         <Toolbar

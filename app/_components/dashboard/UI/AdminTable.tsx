@@ -57,7 +57,11 @@ export default function AdminTable<T extends Record<string, unknown>>({
               <TableCell
                 key={String(col.key)}
                 align={col.align || "left"}
-                sx={{ fontWeight: 600, textTransform: "uppercase" }}
+                sx={{
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  fontSize: "0.75rem",
+                }}
                 width={col.width}
               >
                 {col.label}

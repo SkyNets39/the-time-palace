@@ -56,7 +56,7 @@ export default function ReservationsTable() {
       key: "watch_id",
       label: "Watch ID",
       render: (row: ReservationRow) => (
-        <Typography variant="body2" fontWeight={600}>
+        <Typography variant="body2" fontWeight={500}>
           {row.watch_id}
         </Typography>
       ),
@@ -107,8 +107,8 @@ export default function ReservationsTable() {
           <Chip
             label={row.status ?? "Unknown"}
             sx={{
-              width: 110,
-              py: 0.5,
+              px: 1,
+              fontSize: "0.5rem",
               fontWeight: 600,
               textTransform: "capitalize",
               border: "1px solid",

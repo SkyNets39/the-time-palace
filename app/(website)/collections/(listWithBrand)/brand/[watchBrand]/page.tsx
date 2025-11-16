@@ -36,7 +36,7 @@ export default async function BrandPage({ params, searchParams }: Props) {
   const query = await searchParams;
 
   const page = query.page ? parseInt(query.page, 10) : 1;
-  const limit = 12;
+  const limit = 9;
   const sortBy = (query.sortBy as SortOption) ?? "alpha-asc"; // ✅ tambahkan
 
   const filters = {
@@ -84,7 +84,7 @@ export default async function BrandPage({ params, searchParams }: Props) {
   }
 
   return (
-    <Box sx={{ px: { xs: 2, md: 4 } }}>
+    <>
       <BrandStory brand={watchBrand} />
       <CatalogHeader brand={watchBrand} />
       {!sortedData || sortedData.length === 0 ? (
@@ -105,6 +105,6 @@ export default async function BrandPage({ params, searchParams }: Props) {
         limit={limit}
         route={`/collections/brand/${watchBrand}`}
       />
-    </Box>
+    </>
   );
 }

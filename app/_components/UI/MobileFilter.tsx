@@ -28,8 +28,8 @@ export default function FilterDrawer({ options, lockedBrand }: Props) {
           borderColor: "divider",
           bgcolor: "background.paper",
           borderRadius: 1,
-          px: 2,
-          py: 1,
+          px: 1.2,
+          py: 0.8,
           display: { xs: "flex", md: "none" },
           alignItems: "center",
           gap: 1,
@@ -57,7 +57,7 @@ export default function FilterDrawer({ options, lockedBrand }: Props) {
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
-              p: 2,
+              p: 1.5,
               borderBottom: "1px solid",
               borderColor: "divider",
             }}
@@ -68,7 +68,7 @@ export default function FilterDrawer({ options, lockedBrand }: Props) {
             </IconButton>
           </Box>
 
-          <Box sx={{ flex: 1, overflowY: "auto", p: 2 }}>
+          <Box sx={{ flex: 1, overflowY: "auto", p: 1.5 }}>
             <Filter options={options} lockedBrand={lockedBrand} />
           </Box>
 

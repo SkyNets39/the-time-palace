@@ -9,22 +9,22 @@ import StoreIcon from "@mui/icons-material/Store";
 
 const cardItems = [
   {
-    icon: <ShieldOutlinedIcon color="secondary" sx={{ fontSize: 60 }} />,
+    icon: <ShieldOutlinedIcon color="secondary" sx={{ fontSize: 45 }} />,
     header: "Authentic Guarantee",
     body: "We ensure every watch is 100% genuine with our authenticity guarantee",
   },
   {
-    icon: <SupportAgentIcon color="secondary" sx={{ fontSize: 60 }} />,
+    icon: <SupportAgentIcon color="secondary" sx={{ fontSize: 45 }} />,
     header: "Customer Service",
     body: "Our team is available 24/7 to provide top-notch support and assistance",
   },
   {
-    icon: <LocalShippingIcon color="secondary" sx={{ fontSize: 60 }} />,
+    icon: <LocalShippingIcon color="secondary" sx={{ fontSize: 45 }} />,
     header: "Fast and Secure Delivery",
     body: "Enjoy swift and secure delivery services, ensuring your watch arrives promptly and safely.",
   },
   {
-    icon: <StoreIcon color="secondary" sx={{ fontSize: 60 }} />,
+    icon: <StoreIcon color="secondary" sx={{ fontSize: 45 }} />,
     header: "Shopping Experience",
     body: "Browse and purchase easily through our online platforms or visit one of our 4 offline stores",
   },
@@ -38,7 +38,7 @@ export default function WhyBanner() {
         flexDirection: "column",
         textAlign: "center",
         px: { xs: 2, sm: 4, md: 8 }, // responsive padding
-        py: { xs: 4, sm: 5, md: 6 },
+        py: { xs: 3, sm: 4, md: 5 },
         gap: 3,
       }}
     >
@@ -47,14 +47,14 @@ export default function WhyBanner() {
         <Typography
           variant="h2"
           sx={{
-            fontSize: { xs: "1.8rem", sm: "2.2rem", md: "2.4rem" },
+            fontSize: { xs: "1.4rem", sm: "1.6rem", md: "1.8rem" },
           }}
         >
           Why Choose Us
         </Typography>
         <Typography
           sx={{
-            fontSize: { xs: "0.9rem", sm: "1rem" },
+            fontSize: { xs: "0.8rem", sm: "0.9rem" },
             maxWidth: 700,
             mx: "auto",
           }}

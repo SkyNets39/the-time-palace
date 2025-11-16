@@ -40,39 +40,40 @@ const adminTheme = createTheme({
     fontFamily: '"Montserrat", sans-serif',
     h1: {
       fontWeight: 600,
-      fontSize: "3rem",
+      fontSize: "2.25rem",
       letterSpacing: "-0.5px",
     },
     h2: {
       fontWeight: 600,
-      fontSize: "2.25rem",
+      fontSize: "1.688rem",
       letterSpacing: "-0.5px",
     },
     h3: {
       fontWeight: 600,
-      fontSize: "1.75rem",
+      fontSize: "1.313rem",
     },
     h4: {
       fontWeight: 600,
-      fontSize: "1.5rem",
+      fontSize: "1.125rem",
     },
     h5: {
       fontWeight: 600,
-      fontSize: "1.3rem",
+      fontSize: "0.975rem",
     },
     h6: {
       fontWeight: 600,
-      fontSize: "1.2rem",
+      fontSize: "0.9rem",
+      color: "black",
     },
     body1: {
       fontFamily: '"Montserrat Variable", sans-serif',
-      fontSize: "1.3rem",
+      fontSize: "0.975rem",
       lineHeight: 1.6,
       color: "text.secondary",
     },
     body2: {
       fontFamily: '"Montserrat Variable", sans-serif',
-      fontSize: "1rem",
+      fontSize: "0.75rem",
       color: "#4F4F4F",
     },
     button: {

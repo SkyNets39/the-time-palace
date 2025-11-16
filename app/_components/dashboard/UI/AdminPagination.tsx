@@ -36,7 +36,7 @@ export default function AdminPagination({ count }: AdminPaginationProps) {
         bgcolor: "grey.200",
         border: "1px solid",
         borderColor: "divider",
-        p: 2,
+        p: 1,
       }}
     >
       <Stack spacing={2}>

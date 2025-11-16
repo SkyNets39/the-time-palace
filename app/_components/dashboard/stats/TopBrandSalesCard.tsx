@@ -53,7 +53,11 @@ export default function TopBrandSalesCard() {
       }}
     >
       <CardContent>
-        <Typography variant="h6" fontWeight={600} mb={2}>
+        <Typography
+          variant="h6"
+          fontWeight={600}
+          sx={{ fontSize: "0.85rem", mb: 1.5 }}
+        >
           Item Sold by Brand ({periodLabel})
         </Typography>
         {isLoading ? (
@@ -69,9 +73,9 @@ export default function TopBrandSalesCard() {
                 nameKey="brand"
                 cx="50%"
                 cy="50%"
-                innerRadius={"60%"}
-                outerRadius={"80%"}
-                label
+                innerRadius={"50%"}
+                outerRadius={"70%"}
+                label={{ fontSize: "0.7rem" }}
               >
                 {data?.map((_, index) => (
                   <Cell
@@ -88,7 +92,12 @@ export default function TopBrandSalesCard() {
                   backgroundColor: "#fff",
                 }}
               />
-              <Legend verticalAlign="middle" align="right" layout="vertical" />
+              <Legend
+                verticalAlign="middle"
+                align="right"
+                layout="vertical"
+                wrapperStyle={{ fontSize: "0.75rem", paddingLeft: 10 }}
+              />
             </PieChart>
           </ResponsiveContainer>
         )}

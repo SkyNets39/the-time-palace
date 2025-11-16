@@ -73,11 +73,11 @@ export default function Profile({ fullName }: ProfileProps) {
         sx={{
           display: "flex",
           alignItems: "center",
-          gap: 1.5,
+          gap: 1,
           cursor: "pointer",
-          px: 1,
-          py: 0.5,
-          borderRadius: 2,
+          px: 0.6,
+          py: 0.3,
+          borderRadius: 1.2,
           transition: "background-color 0.2s ease",
           "&:hover": {
             backgroundColor: "rgba(0,0,0,0.04)",
@@ -89,9 +89,9 @@ export default function Profile({ fullName }: ProfileProps) {
             bgcolor: "secondary.main",
             color: "white",
             fontWeight: 600,
-            width: 36,
-            height: 36,
-            fontSize: "1rem",
+            width: 28,
+            height: 28,
+            fontSize: "0.8rem",
           }}
         >
           {initial}

@@ -24,14 +24,14 @@ export default function BrandsList({ title = "Our Brands" }: Props) {
   ];
 
   return (
-    <Box sx={{ my: 8, mx: { xs: 2, sm: 4, md: 8 } }}>
+    <Box sx={{ my: 5, mx: { xs: 1.5, sm: 3, md: 8 } }}>
       {/* Heading */}
       <Typography
         variant="h2"
         sx={{
-          mb: 4,
+          mb: 3,
           textAlign: { xs: "center", sm: "left" },
-          fontSize: { xs: "1.8rem", sm: "2.2rem", md: "2.4rem" },
+          fontSize: { xs: "1.3rem", sm: "1.5rem", md: "1.7rem" },
         }}
       >
         {title}
@@ -47,7 +47,7 @@ export default function BrandsList({ title = "Our Brands" }: Props) {
         {brands.map((brand, index) => (
           <Grid
             key={index}
-            size={{ xs: 6, sm: 4, md: 2 }} // 📱 2 kolom, 🧾 3 kolom, 💻 6 kolom
+            size={{ xs: 6, sm: 4, md: 2 }}
             display="flex"
             justifyContent="center"
           >

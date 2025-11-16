@@ -15,7 +15,7 @@ export default function AdminTableOperations({
         display: "flex",
         flexWrap: "wrap",
         alignItems: "center",
-        gap: 5,
+        gap: 1,
         mb: 3,
       }}
     >

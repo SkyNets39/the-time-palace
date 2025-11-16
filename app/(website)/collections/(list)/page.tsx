@@ -19,7 +19,7 @@ export default async function Page(props: Props) {
   const searchParams = await props.searchParams;
 
   const page = searchParams.page ? parseInt(searchParams.page, 10) : 1;
-  const limit = 12;
+  const limit = 9;
 
   const filters = {
     brand: searchParams.brand,

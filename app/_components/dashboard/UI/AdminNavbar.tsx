@@ -35,8 +35,8 @@ export default function AdminNavbar({ currentTab }: AdminNavbarProps) {
         display: "flex",
         flexDirection: "column",
         alignItems: "stretch",
-        mt: 5,
-        gap: 1.5,
+        mt: 3.5,
+        gap: 2,
       }}
     >
       {navItems.map((item) => {
@@ -52,14 +52,14 @@ export default function AdminNavbar({ currentTab }: AdminNavbarProps) {
             sx={{
               width: "100%",
               justifyContent: "flex-start",
-              px: 2,
-              py: 1.2,
+              px: 1.5,
+              py: 0.8,
               color: isActive
                 ? theme.palette.primary.main
                 : theme.palette.text.secondary,
               fontWeight: isActive ? 600 : 400,
               textTransform: "none",
-              fontSize: "1.05rem",
+              fontSize: "0.8rem",
               backgroundColor: isActive
                 ? theme.palette.action.selected
                 : "transparent",

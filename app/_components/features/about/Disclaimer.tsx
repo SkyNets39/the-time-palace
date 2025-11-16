@@ -11,13 +11,13 @@ export default function Disclaimer({ backgroundImage }: Props) {
       sx={{
         display: "flex",
         flexDirection: "column",
-        gap: 3,
+        gap: 2,
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
         color: "white",
-        px: 8,
-        py: 25,
+        px: 4,
+        py: 12,
         backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(${backgroundImage})`,
         backgroundSize: "cover", // ✅ makes image fill without distortion
         backgroundRepeat: "no-repeat",
@@ -27,7 +27,7 @@ export default function Disclaimer({ backgroundImage }: Props) {
       <Typography variant="h3" gutterBottom>
         Disclaimer
       </Typography>
-      <Typography variant="body1" maxWidth="800px">
+      <Typography variant="body1" maxWidth="800px" sx={{ mb: 1 }}>
         All the timepieces listed on Time Palace are sourced from trusted
         dealers. Prices, availability, and specifications are subject to change
         without notice. Time Palace is not affiliated with any watch brands
